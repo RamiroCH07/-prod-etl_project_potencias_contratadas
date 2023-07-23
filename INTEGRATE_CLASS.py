@@ -6,7 +6,7 @@ import pandas as pd
 class INTEGRATE_CLASS:
     def __init__(self):
         self.obj_downloader = Downloader_files()
-        pass
+        
     def TEST_GET_EXCEL_WITH_ESTRACT_DATA(self):
         file_names = os.listdir('EXCEL_FILES')
         #AGREGAMOS EL PRIMERO

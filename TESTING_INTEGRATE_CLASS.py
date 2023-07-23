@@ -1,9 +1,10 @@
 #%%
 from INTEGRATE_CLASS import INTEGRATE_CLASS
 obj_integrate = INTEGRATE_CLASS()
+#%% LLEVAR A CABO EL PROCESO ETL
+obj_integrate.START_ETL_PROCCESS_JOB
+
 #%%
-
-
 #obj_integrate.TEST_GET_EXCEL_WITH_ESTRACT_DATA()
 obj_integrate.TEST_GET_EXCEL_WITH_ESTRACT_DATA()
 # %%

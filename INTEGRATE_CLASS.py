@@ -22,9 +22,6 @@ class INTEGRATE_CLASS:
             with pd.ExcelWriter('DATOS_EXTRAIDOS_POTENCIAS_CONTRATADAS.xlsx',mode = 'a') as writer:
                 df.to_excel(writer,sheet_name=file_name,index = False)
 
-    def PRINT_HELLO(self):
-        print('HELLO')
-
 
     def START_ETL_PROCCESS_JOB(self):
         # ---------------------------- DESCARGA DATOS ---------------------------------------------------

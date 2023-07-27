@@ -127,7 +127,7 @@ class Estracter_data:
             for name in self.camp_names:
                 if name == self.camp_names[1]:
                     exist_camp = True
-                if name == self.camp_names[9]:
+                elif name == self.camp_names[9]:
                     coor,exist_camp = self._identify_coordinates_cell(hoja, name,key_name = 'FIJA')
                 elif name == self.camp_names[10]:
                     coor,exist_camp = self._identify_coordinates_cell(hoja, name,key_name = 'VARIABLE')
@@ -187,7 +187,7 @@ class Estracter_data:
         df = pd.DataFrame(columns = columns_names)
         for name in self.sheet_names:
             print('EXTRAYENDO DATOS DE HOJA:'+' '+name)
-            df = pd.concat([df,self._estract_data_x_sheet_to_df(self.wb[name],name)])
+            df = pd.concat([df,self._estract_data_x_sheet_to_df(self.wb[name],name)],ignore_index = True)
         return df
             
             
